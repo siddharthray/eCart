@@ -33,6 +33,8 @@ import { PaginatorModule } from 'primeng/paginator';
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MenuItem } from 'primeng/api';
+import { ProductFilterComponent } from './products/product-filter/product-filter.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { MenuItem } from 'primeng/api';
     AdminOrdersComponent,
     LoginComponent,
     ProductFormComponent,
+    ProductFilterComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,7 @@ import { MenuItem } from 'primeng/api';
     BrowserAnimationsModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
-      { path: "", component: HomeComponent },
+      { path: "", component: ProductsComponent },
       { path: "products", component: ProductsComponent },
       { path: "shopping-cart", component: ShoppingCartComponent },
       { path: "login", component: LoginComponent },
